@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omnifood is a premium food delivery service with the mission to bring affordable and healthy meals to as many people as possible.">
     <title>Omnifood</title>
 
     <!-- ========== FONTS ========== -->
@@ -17,8 +18,30 @@
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/all.min.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="resources/css/styles.css">
     <link rel="stylesheet" href="resources/css/queries.css">
+
+    <!-- ========== FAVICON ========== -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/favicons">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="resources/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -31,12 +54,14 @@
         <nav>
             <div class="row">
                 <img src="resources/images/logo-white.png" alt="Omnifood logo" class="logo">
-                <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#" id="sign-up">Sign up</a></li>
+                <img src="resources/images/logo.png" alt="Omnifood logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#procedure">How it works</a></li>
+                    <li><a href="#locations">Our cities</a></li>
+                    <li><a href="#plans" id="sign-up">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="fas fa-bars"></i></a>
             </div>
         </nav>
 
@@ -44,14 +69,14 @@
 
         <div class="hero-text-box">
             <h1>Goodbye junk food.<br>Hello super <em>healthy</em> meals.</h1>
-            <a class="btn btn-full" href="#">I’m hungry</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
 
     <!-- ========== FEATURES ========== -->
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
 
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
@@ -59,7 +84,7 @@
                 busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-1">
             <div class="col span-1-of-4 box">
                 <i class="fas fa-infinity icon-big"></i>
                 <h3>Up to 365 days/year</h3>
@@ -156,7 +181,7 @@
 
     <!-- ========== STEPS ========== -->
 
-    <section class="section-steps">
+    <section class="section-steps" id="procedure">
 
         <div class="row">
             <h2> How it works &mdash; Simple as 1, 2, 3</h2>
@@ -165,7 +190,7 @@
         <div class="row">
 
             <div class="col span-1-of-2 steps-box">
-                <img src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen">
+                <img src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" class="app-screen js--wp-2">
             </div>
 
             <div class="col span-1-of-2 steps-box">
@@ -186,7 +211,7 @@
                 </div>
 
                 <div class="appstores">
-                    
+
                     <a href="https://apps.apple.com/us/app/chick-fil-a/id488818252" target="_blank" class="btn-app"><img
                             src="resources/images/download-app.svg" alt="Apple Appstore Button"></a>
 
@@ -202,13 +227,13 @@
 
     <!-- ========== CITIES ========== -->
 
-    <section class="section-cities">
+    <section class="section-cities" id="locations">
 
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
 
-        <div class="row">
+        <div class="row js--wp-3">
 
             <div class="col span-1-of-4 box">
 
@@ -359,7 +384,7 @@
 
     <!-- ========== PLANS ========== -->
 
-    <section class="section-plans">
+    <section class="section-plans js--section-plans" id="plans">
 
         <div class="row">
             <h2>Start eating healthy today</h2>
@@ -369,7 +394,7 @@
 
             <div class="col span-1-of-3">
 
-                <div class="plan-box">
+                <div class="plan-box js--wp-4">
 
                     <div>
                         <h3>Premium</h3>
@@ -530,7 +555,7 @@
                     <div class="row">
 
                         <div class="col span-1-of-3">
-                            <label for="message">Drop us a line</label>
+                            <label>Drop us a line</label>
                         </div>
 
                         <div class="col span-2-of-3">
@@ -542,7 +567,7 @@
                     <div class="row">
 
                         <div class="col span-1-of-3">
-                            <label for="">&nbsp;</label>
+                            <label>&nbsp;</label>
                         </div>
 
                         <div class="col span-2-of-3">
@@ -600,6 +625,10 @@
         </div>
 
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
 
 </body>
 
